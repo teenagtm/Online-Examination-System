@@ -195,7 +195,9 @@ router.post(
             profileInfo: user.id,
           });
 
-          const studentProfileID = studentData._id;
+          console.log(studentData);
+
+          const studentProfileID = studentData?._id;
           payload.profileID = studentProfileID;
           break;
 

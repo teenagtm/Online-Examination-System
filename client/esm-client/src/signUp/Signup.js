@@ -134,10 +134,13 @@ function Signup(props) {
                   },
                 ]}
               >
-                <Select defaultValue="Role" onSelect={handleSelect}>
-                  <Option value="student">Student</Option>
-                  <Option value="teacher">Teacher</Option>
-                </Select>
+                <select defaultValue="Role" onSelect={handleSelect}>
+                <option value="role" disabled hidden>
+    Role
+  </option>
+                  <option value="student">Student</option>
+                  <option value="teacher">Teacher</option>
+                </select>
               </Form.Item>
 
               <Form.Item
@@ -148,12 +151,15 @@ function Signup(props) {
                   },
                 ]}
               >
-                <Select defaultValue="Section" disabled={showSelect}>
-                  <Option value="A">A</Option>
-                  <Option value="B">B</Option>
-                  <Option value="C">C</Option>
-                  <Option value="D">D</Option>
-                </Select>
+                <select defaultValue="Section" disabled={showSelect}>
+                <option value="Section" disabled hidden>
+    Section
+  </option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                </select>
               </Form.Item>
 
               <Form.Item
@@ -164,11 +170,15 @@ function Signup(props) {
                   },
                 ]}
               >
-                <Select defaultValue="Class" disabled={showSelect}>
-                  <Option value="IX">IX</Option>
+                <select defaultValue="Class" disabled={showSelect}>
+                <option value="Class" disabled hidden>
+                Class
+  </option>
+                  <option value="IX">IX</option>
+                  <option value="X">X</option>
                   {/* <Option value="XI">XI</Option>
                     <Option value="XII">XII</Option> */}
-                </Select>
+                </select>
               </Form.Item>
             </div>
             <div
